@@ -217,7 +217,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📧 Contact
 
-For questions or suggestions, please open an issue or contact [your-email@example.com]
+For questions or suggestions, please open an issue or contact [Mansourshakla@gmail.com]
 
 ---
 
