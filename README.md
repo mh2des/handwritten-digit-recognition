@@ -63,14 +63,14 @@ The pipeline consists of three main stages:
 
 ```mermaid
 graph TD
-    A[Input Image] --> B[Preprocessing (CLAHE + Resize)]
+    A[Input Image] --> B["Preprocessing (CLAHE + Resize)"]
     B --> C{Inference Strategy}
     C -->|Patch 1| D[MobileNetV2]
     C -->|Patch 2| D
     C -->|...| D
     C -->|Patch N| D
     D --> E[Aggregate Probabilities]
-    E --> F[Final Prediction (Class 01-70)]
+    E --> F["Final Prediction (Class 01-70)"]
 ```
 
 ---
@@ -84,6 +84,10 @@ The model was evaluated on a held-out test set of 140 images.
 | **Total Test Images** | 140 |
 | **Correct Predictions** | 116 |
 | **Accuracy** | **82.86%** |
+
+### Sample Predictions
+![Sample Predictions](assets/sample_predictions.png)
+*Figure: Random sample of test images with Ground Truth vs Model Prediction. Green titles indicate correct predictions.*
 
 > **Note**: The ensemble voting strategy significantly improved accuracy by allowing the model to "see" the digit from multiple positions, making it robust to translation and scaling issues common in handwriting.
 
