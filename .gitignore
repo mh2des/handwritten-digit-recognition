@@ -182,3 +182,4 @@ Desktop.ini
 !test/*.png
 !test/*.jpg
 !test/*.jpeg
+generate_visuals.py
